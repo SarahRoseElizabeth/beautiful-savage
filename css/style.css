@@ -1,0 +1,372 @@
+@font-face {
+  font-family: "HK Grotesk Bold";
+  src: url("../font/hk-grotesk/HKGrotesk-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HK Grotesk Medium";
+  src: url("../font/hk-grotesk/HKGrotesk-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "HK Grotesk SemiBold";
+  src: url("../font/hk-grotesk/HKGrotesk-SemiBold.otf") format("opentype");
+}
+
+
+body{
+  margin: 0;
+}
+
+.logo svg {
+  height: 100px;
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  position:fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+header nav ul li {
+  padding-right: 20px;
+  letter-spacing: 2px;
+  font-size: 20pt;
+  color: #fff;
+  font-family: "HK Grotesk SemiBold", sans-serif;
+}
+
+.image-slider {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  overflow: hidden;
+}
+
+.image-slider .slider-box img{
+  height: 100vh;
+}
+
+.slider-text{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.slider-text .slider-text-position {
+  position: absolute;
+  right: -110px;
+  /* https://github.com/michalsnik/aos/issues/104 */
+  transform-style: preserve-3d;
+  z-index: 2;
+}
+
+.slider-text .slider-text-position p{
+  display: inline-block;
+  position: relative;
+  margin-top: 70px;
+  font-family: "HK Grotesk SemiBold", sans-serif;
+  letter-spacing: 1px;
+  font-size: 14pt;
+  cursor: pointer;
+}
+
+.slider-text .slider-text-position p::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  bottom: -20px;
+  height: 5px;
+  width: 0;
+  opacity: 1;
+  background: #000;
+}
+
+.slider-text .slider-text-position.aos-animate p::after {
+  animation: 0.5s lineGrow 1.25s forwards;
+}
+
+
+h1{
+  margin: 0;
+  font-size: 90pt;
+  font-family: "HK Grotesk SemiBold", sans-serif;
+  letter-spacing: 3px;
+}
+
+h2{
+  margin: 0;
+  font-size: 60pt;
+  font-family: "HK Grotesk SemiBold", sans-serif;
+  letter-spacing: 3px;
+}
+
+.slider-text .slider-text-position h1 .slider-text-highlight {
+  color: #fff;
+}
+
+.shopping-cart {
+  background: #fff;
+  color: #000;
+  font-family: "HK Grotesk Medium", sans-serif;
+  font-size: 14pt;
+  height: 40px;
+  width:40px;
+  border-radius: 20px;
+  padding: 0;
+  line-height: 42px;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  right: 60px;
+}
+
+.main-content {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-column-gap: 20%;
+  grid-row-gap: 75px;
+  /* grid-template-rows: repeat(3, 500px); */
+}
+
+.content-image{
+  padding-top: 125%;
+  background-size: cover;
+  position: relative;
+}
+
+.content-image p{
+  font-family: "HK Grotesk SemiBold", sans-serif;
+  font-size: 14pt;
+  letter-spacing: 1px;
+  position: absolute;
+  top: -75px;
+  cursor: pointer;
+}
+
+.content-image p::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  bottom: -20px;
+  height: 5px;
+  width: 0;
+  opacity: 1;
+  background: #000;
+}
+
+.content-image.aos-animate p::after{
+  animation: 0.5s lineGrow 0.25s forwards;
+}
+
+.content-image:nth-child(odd) p {
+  right: -30px;
+}
+
+.content-image:nth-child(even) p {
+  left: -30px;
+}
+
+.content-image.geometric {
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.content-image.geometric.shape {
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.main-content .content-tagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content .content-tagline p {
+  font-family: "Hk Grotesk Medium", sans-serif;
+  font-size: 48pt;
+  margin: 0;
+}
+
+.insta-store {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: 50% 50%;
+  margin-top: 150px;
+  height: calc(800px + 5vw);
+  position: relative;
+}
+
+.insta-store .insta-store-image {
+  /* padding-top: 133%; */
+  background-size: cover;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  position: relative;
+}
+
+.insta-store .insta-store-image .insta-store-title {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.insta-store .insta-store-image .insta-store-title p {
+  margin: 0;
+  color: #fff;
+  font-family: "HK Grotesk SemiBold", sans-serif;
+  font-size: 72pt;
+  position: relative;
+  bottom: -40px;
+}
+
+.square-tile {
+  /* padding-top: 100%; */
+  display: block;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.square-tile .white-block {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square-tile:hover .white-block {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.square-tile .white-block .square-text {
+  color: #000;
+  font-family: "Hk Grotesk Medium", sans-serif;
+  letter-spacing: 1px;
+  font-size: 14pt;
+}
+
+footer {
+  height: 300px;
+  background: #000;
+  color: #fff;
+  font-family: "HK Grotesk SemiBold", sans-serif;
+  font-size: 20pt;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer ul {
+  margin: 0;
+  height: 200px;
+  list-style-type: none;
+  flex: 1;
+}
+
+footer ul li.extra-info{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+footer ul li:nth-child(6n+3) {
+  margin-top: 20px;
+}
+
+footer form {
+  flex: 4;
+}
+
+footer form input {
+  background-color: #000;
+  outline: 0;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  width: 500px;
+  margin-left: 20px;
+  font-family: "HK Grotesk SemiBold", sans-serif;
+  font-size: 20pt;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header ul li:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+footer ul li:hover {
+  color: lightgray;
+  cursor: pointer;
+}
+
+nav.nav-scroll {
+  background: #000;
+  animation: 1s navFadeIn;
+}
+
+nav.nav-scroll svg text {
+  fill: #fff;
+  animation: 2s logoFadeIn;
+}
+
+nav.nav-scroll ul li:hover {
+  color: lightgray;
+}
+
+/* animate on alpha channel*/
+@keyframes navFadeIn {
+  from {
+    background-color: #00000000;
+  }
+  to {
+    background-color: #000000FF;
+  }
+}
+
+@keyframes logoFadeIn {
+  from {
+    fill: #000;
+  }
+  to {
+    fill: #fff;
+  }
+}
+
+@keyframes lineGrow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

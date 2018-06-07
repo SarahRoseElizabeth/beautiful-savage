@@ -139,7 +139,6 @@ h2{
   grid-template-columns: 40% 40%;
   grid-column-gap: 20%;
   grid-row-gap: 75px;
-  /* grid-template-rows: repeat(3, 500px); */
 }
 
 .content-image{
@@ -245,7 +244,6 @@ h2{
 }
 
 .square-tile {
-  /* padding-top: 100%; */
   display: block;
   background-size: cover;
   box-sizing: border-box;

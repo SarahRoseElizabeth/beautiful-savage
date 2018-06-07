@@ -1,6 +1,4 @@
 AOS.init();
-
-
 $(document).ready(function(){
 
   let navBar = $(".nav-bar");

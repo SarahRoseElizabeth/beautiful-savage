@@ -1,3 +1,7 @@
+
+*** Note: On first time load in the aos animations do not always work flawlessly so you may need to refresh the page ***
+
+
 Beautiful Savage
 
 Instances of Motion Graphics

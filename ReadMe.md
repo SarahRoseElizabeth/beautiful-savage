@@ -43,3 +43,7 @@ Line 363 to Line 370 (style.css)
 
 SVG
 Line 19 to 21 (index.html)
+
+SVG animated (style.css)
+Line 339 to 342
+Line 358 to 365

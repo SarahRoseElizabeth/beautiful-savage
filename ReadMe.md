@@ -38,3 +38,8 @@ Line 80
 Line 85 to 99 (style.css)
 Line 159 to 173 (style.css)
 Line 363 to Line 370 (style.css)
+
+7) Additional requirement:
+
+SVG
+Line 19 to 21 (index.html)

@@ -42,8 +42,5 @@ Line 363 to Line 370 (style.css)
 7) Additional requirement:
 
 SVG
-Line 19 to 21 (index.html)
-
-SVG animated (style.css)
-Line 339 to 342
-Line 358 to 365
+Line 65 to 78 (index.html)
+Line 92 to 105 (index.html)

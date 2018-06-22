@@ -25,7 +25,7 @@ body{
 }
 
 header {
-  min-height: 100vh;
+  min-height: 100vh
 }
 
 header nav {
@@ -185,15 +185,18 @@ h2{
 }
 
 .content-image.geometric {
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: left center;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  position: relative;
 }
 
-.content-image.geometric.shape {
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: left center;
+.content-image.geometric svg {
+  height: 500px;
+}
+
+.content-image.geometric.shape svg {
+  height: 400px;
 }
 
 .main-content .content-tagline {
@@ -219,7 +222,6 @@ h2{
 }
 
 .insta-store .insta-store-image {
-  /* padding-top: 133%; */
   background-size: cover;
   grid-row-start: 1;
   grid-row-end: 3;

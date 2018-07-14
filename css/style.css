@@ -19,7 +19,7 @@ body{
 }
 
 .logo svg {
-  height: 100px;
+  height: 80px;
   margin-top: 15px;
   margin-left: 50px;
 }
@@ -338,9 +338,9 @@ nav.nav-scroll {
   animation: 1s navFadeIn;
 }
 
-nav.nav-scroll svg text {
+nav.nav-scroll svg path {
   fill: #fff;
-  animation: 2s logoFadeIn;
+  animation: 2s logoFadeIn forwards;
 }
 
 nav.nav-scroll ul li:hover {

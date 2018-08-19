@@ -18,6 +18,50 @@ body{
   margin: 0;
 }
 
+.system-message {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100px;
+  background: #fff;
+  font-family: "HK Grotesk Bold", sans-serif;
+  color: #000;
+  letter-spacing: 1px;
+  z-index: 2000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  box-shadow: 0 0 5px #00000088;
+}
+
+.system-message.showing {
+  animation: 0.25s ease-out forwards slideDown;
+}
+
+.system-message.hidden {
+  animation: 0.25s ease-out forwards slideUp;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
 .logo svg {
   height: 80px;
   margin-top: 15px;

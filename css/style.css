@@ -37,6 +37,10 @@ body{
   box-shadow: 0 0 5px #00000088;
 }
 
+.system-message .system-message-text {
+  padding: 0 20px;
+}
+
 .system-message.showing {
   animation: 0.25s ease-out forwards slideDown;
 }

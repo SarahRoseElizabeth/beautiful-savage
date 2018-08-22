@@ -23,5 +23,10 @@ $(document).ready(function(){
 	  else{
 		  navBar.removeClass("nav-scroll");
 	  }
-  })
-})
+  });
+
+  $('.mobile-menu').on('click', function(){
+      $('header nav').toggleClass('show-menu');
+  });
+
+});
